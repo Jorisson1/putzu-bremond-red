@@ -12,6 +12,7 @@ type Personnage struct {
 }
 
 func  main() {
+	fmt.Printf("test")
 	var p1 Personnage
 	p1.Init("Alan", "magicien", 1, 1000000, 100, map[string]int{"potion": 3})
 	p1.DisplayInfo()
@@ -69,7 +70,7 @@ func (p *Personnage) Menu() {
 	fmt.Println("1) Afficher les informations du personnage")
 	fmt.Println("2) Afficher l'inventaire")
 	fmt.Println("3) Allez au marchand")
-	fmt.Println("4")
+	fmt.Println("4) ")
 	fmt.Scan(choice)
 
 	switch choice {
